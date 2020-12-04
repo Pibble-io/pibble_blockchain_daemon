@@ -1,0 +1,38 @@
+{
+  "name": "pibble_blockchain_daemon",
+  "version": "1.1.8",
+  "description": "Pibble Blockchain Deamon monitors blockchain for incoming deposits and withdrawal and updates their state on the database.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "startDeposit": "node appDeposit.js",
+    "startWithdraw": "node appWithdraw.js",
+    "db:migrate": "node_modules/.bin/sequelize db:migrate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pibble",
+    "blockchain"
+  ],
+  "author": "Victor L",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "sequelize-cli": "^5.5.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.522.0",
+    "caver-js": "^1.1.2",
+    "cron": "^1.7.1",
+    "debug": "^4.1.1",
+    "dotenv": "^8.1.0",
+    "mysql2": "^1.7.0",
+    "sequelize": "^5.18.1",
+    "web3": "^1.2.1"
+  }
+}
